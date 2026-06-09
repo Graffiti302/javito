@@ -7,6 +7,9 @@ body {
   background-color: black;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1400px;
+  width: 80%;
+  margin: auto;
 }
 a {
   color: blanchedalmond;
@@ -26,11 +29,11 @@ main {
     "ar"
     "s"
     "f";
-  background-color: rgba(3, 61, 100, 0.788);
+    background-color: rgba(0, 48, 73);
 }
 nav {
   grid-area: n;
-  background-color: crimson;
+    background-color: rgb(120, 0, 0);
 }
 nav ul {
   list-style: none;
@@ -59,7 +62,7 @@ article {
 header {
   grid-area: h;
   text-align: center;
-  background-color: green;
+  background-color: rgb(193, 18, 31);
 }
 section ul {
   list-style: none;
