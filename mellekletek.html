@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="hu">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,13 +17,13 @@
   <body>
     <main>
       <header>
-        <h1>Kezdőlap</h1>
+        <h1>Mellékletek</h1>
       </header>
       <nav>
         <ul>
-          <li><a href="index.html">Főoldal</a></li>
+          <li><a href="index.html">Önéletrajz</a></li>
           <li><a href="kezdolap.html">Kezdőlap</a></li>
-          <li><a href="masodik.html">Valami</a></li>
+          <li><a href="mellekletek.html">Mellékletek</a></li>
         </ul>
       </nav>
       <!doctype html>
@@ -77,35 +77,30 @@
             </tr>
           </table>
 
+          <form action="#" method="post">
+            <label for="nev">Név:</label><br />
+            <input type="text" id="nev" name="nev" required /><br />
 
+            <label for="email">E-mail cím:</label><br />
+            <input type="email" id="email" name="email" required /><br />
 
+            <label for="kor">Életkor:</label><br />
+            <input type="number" id="kor" name="kor" min="1" max="120" /><br />
 
-    <form action="#" method="post">
-        <label for="nev">Név:</label><br>
-        <input type="text" id="nev" name="nev" required><br>
+            <p>Nem:</p>
+            <input type="radio" id="ferfi" name="nem" value="ferfi" />
+            <label for="ferfi">Férfi</label>
 
-        <label for="email">E-mail cím:</label><br>
-        <input type="email" id="email" name="email" required><br>
+            <input type="radio" id="no" name="nem" value="no" />
+            <label for="no">Nő</label><br /><br />
 
-        <label for="kor">Életkor:</label><br>
-        <input type="number" id="kor" name="kor" min="1" max="120"><br>
+            <label for="uzenet">Visszajelzés:</label><br />
+            <textarea id="uzenet" name="uzenet" rows="5" cols="40"></textarea
+            ><br /><br />
 
-
-        <p>Nem:</p>
-        <input type="radio" id="ferfi" name="nem" value="ferfi">
-        <label for="ferfi">Férfi</label>
-
-        <input type="radio" id="no" name="nem" value="no">
-        <label for="no">Nő</label><br><br>
-
-        <label for="uzenet">Visszajelzés:</label><br>
-        <textarea id="uzenet" name="uzenet" rows="5" cols="40"></textarea><br><br>
-
-        <input type="submit" value="Küldés">
-        <input type="reset" value="Törlés">
-
-    </form>
-
+            <input type="submit" value="Küldés" />
+            <input type="reset" value="Törlés" />
+          </form>
         </body>
       </html>
       <section>

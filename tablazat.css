@@ -20,11 +20,11 @@ a:hover {
 }
 main {
   grid-template-areas:
-    "h h h"
-    "n n n"
-    "as ar ar"
-    "as s s"
-    "f f f";
+    "h"
+    "n"
+    "as"
+    "as"
+    "f";
   background-color: rgba(3, 61, 100, 0.788);
 }
 nav {
@@ -32,16 +32,16 @@ nav {
   background-color: crimson;
 }
 nav ul {
-  display: flex;
-  gap: 20px;
   list-style: none;
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
 }
 nav ul li {
+  display: inline-block;
   margin-left: 50px;
 }
 footer {
+  grid-area: f;
   background-color: rgb(36, 36, 36);
   color: gray;
   text-align: center;
@@ -49,64 +49,52 @@ footer {
 }
 
 section {
+  grid-area: s;
   margin-left: 30px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid gray;
   margin-right: 50px;
 }
 article {
-  margin-left: 30px;
-  margin-right: 50px;
-  border-bottom: 1px solid gray;
+  grid-area: ar;
 }
 header {
   grid-area: h;
   text-align: center;
   background-color: green;
 }
-div {
-  margin-top: 20px;
-  grid-area: as;
-  margin-left: 50px;
+section,
+article {
+  margin-left: 30px;
+  margin-right: 50px;
+  border-bottom: 1px solid gray;
 }
-div ul {
-  list-style: none;
-}
-section ul {
-  list-style: none;
-}
-img {
-  max-width: 80%;
-  margin-left: 50px;
-  margin-top: 20px;
-  border: 2px solid black;
-  padding: 5px;
-}
+
 table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
+  font-family: Arial, sans-serif;
   width: 90%;
   border: 3px solid black;
+  border-collapse: collapse;
   margin-right: 20px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
 }
 
 td:nth-child(1) {
   text-align: left;
-  padding: 2px;
 }
+
 td {
   text-align: right;
 }
 
 tr:nth-child(1) {
-  text-decoration: none;
   height: 40px;
 }
+
 caption {
   font-size: 30px;
   color: white;
-}
-tr:nth-child(8) {
-  border: 1px solid black;
 }
